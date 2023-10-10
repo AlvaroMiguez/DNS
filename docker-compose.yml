@@ -11,7 +11,8 @@ services:
     volumes:
       - ./conf:/etc/bind
       - ./zonas:/var/lib/bind
-       networks:
+
+networks:
       - bind9_subnet
     stdin_open: true # docker run -i
     tty: true # docker run -t
