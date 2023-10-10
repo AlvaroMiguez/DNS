@@ -12,8 +12,8 @@ services:
       bind9_subnet:
         ipv4_address: 172.28.5.1
     volumes:
-      - ./conf:/etc/bind
-      - ./zonas:/var/lib/bind
+      - ./config:/etc/bind
+      - ./lib:/var/lib/bind
   asir_cliente:
     container_name: asir_cliente
     image: alpine
