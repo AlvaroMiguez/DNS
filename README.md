@@ -29,7 +29,12 @@ networks:
 ~~~
 2. Crear la red para el DNS
 ~~~
-
+docker network create   
+    --driver=bridge   
+    --subnet=172.28.0.0/16   
+    --ip-range=172.28.5.0/24   
+    --gateway=172.28.5.254   
+bind9_subnet
 ~~~
 3. configurar los archivos
 4. docker compose up
