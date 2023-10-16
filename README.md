@@ -36,5 +36,12 @@ docker network create
     --gateway=172.28.5.254   
 bind9_subnet
 ~~~
-3. configurar los archivos
+3. configurar los archivos conf
+
+###named.conf
+
+~~~
+include "/etc/bind/named.conf.options";
+include "/etc/bind/named.conf.local";
+~~~
 4. docker compose up
