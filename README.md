@@ -98,4 +98,5 @@ Instalamos el dig con estos comandos ya dentro del contenedor
 apt update
 apt install -y dnsutils
 ~~~
+Una vez hecho esto comprobamos con el comando dig
 
