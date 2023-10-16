@@ -87,8 +87,15 @@ test	IN A		172.28.5.4
 alias	IN CNAME	test
 texto	IN TXT		mensaje
 ~~~
-5. docker compose up
+5. Docker compose up
 (*"recordar estar en el directorio correcto"*)
 ~~~
 docker compose up
 ~~~
+## Comprobación
+Instalamos el dig con estos comandos ya dentro del contenedor
+~~~
+apt update
+apt install -y dnsutils
+~~~
+
