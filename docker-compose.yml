@@ -2,9 +2,8 @@ services:
   asir_bind9:
     container_name: asir_bind9
     image: ubuntu/bind9
-    # especificamos la plataforma de la imagen
-    # es posible conflicto cuando el host es 'arm'
-    # ya que no existe una imagen para esa plataforma
+    # usamos esta imagen para ver los logs
+    # la imagen internetconsortium no muestra logs
     platform: linux/amd64
     ports:
       - 53:53
