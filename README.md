@@ -37,11 +37,38 @@ docker network create
 bind9_subnet
 ~~~
 3. configurar los archivos conf
-
-###named.conf
-
+(named.conf)
 ~~~
 include "/etc/bind/named.conf.options";
 include "/etc/bind/named.conf.local";
+~~~
+(named.conf.local)
+~~~
+zone "asircastelao.int" {
+	type master;
+	file "/var/lib/bind/db.asircastelao.int";
+	allow-query {
+		any;
+		};
+	};
+~~~
+(named.conf.options)
+~~~
+options {
+	directory "/var/cache/bind";
+
+	forwarders {
+	 	8.8.8.8;
+		1.1.1.1;
+	 };
+	 forward only;
+
+	listen-on { any; };
+	listen-on-v6 { any; };
+
+	allow-query {
+		any;
+	};
+};
 ~~~
 4. docker compose up
