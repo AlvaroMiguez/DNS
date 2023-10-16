@@ -12,7 +12,7 @@ services:
       bind9_subnet:
         ipv4_address: 172.28.5.1
     volumes:
-      - ./conf:/etc/bind
+      - ./config:/etc/bind
       - ./lib:/var/lib/bind
 networks:
   bind9_subnet:
