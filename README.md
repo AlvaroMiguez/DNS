@@ -88,7 +88,7 @@ alias	IN CNAME	test
 texto	IN TXT		mensaje
 ~~~
 5. docker compose up
-*cursiva*"recordar estar en el directorio correcto"*cursiva*
+(*"recordar estar en el directorio correcto"*)
 ~~~
 docker compose up
 ~~~
