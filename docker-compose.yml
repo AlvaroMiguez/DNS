@@ -17,6 +17,14 @@ services:
       - ./config:/etc/bind
       - ./lib:/var/lib/bind
       - ./logs:/var/log/bind
+  cliente:
+    container_name: asir_cliente
+    image: alpine
+    platform: linux/amd64
+    tty: true
+    stdin_open: true
+    networks:
+      - bind9_subnet
 networks:
   bind9_subnet:
     external: true
