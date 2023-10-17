@@ -19,7 +19,7 @@ services:
       - ./logs:/var/log/bind
   cliente:
     container_name: asir_cliente
-    image: alpine
+    image: ubuntu
     platform: linux/amd64
     tty: true
     stdin_open: true
