@@ -55,4 +55,8 @@ apt install dnsutils
 dig @172.28.5.1 test.asircastelao.int
 ~~
 6. Comprobación
+
+
+
+
 ![imagen](../Comprobaci%C3%B3n.png)
